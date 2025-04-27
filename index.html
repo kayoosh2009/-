@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кладовка Кая</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Кладовка Кая</h1>
+        <button id="theme-toggle">🌙 Тема</button>
+    </header>
+
+    <main>
+        <section class="article-list">
+            <h2>Статьи</h2>
+
+            <div class="article-preview">
+                <img src="img/Что такое Крипто Стейкинг.png" alt="Обложка Стейкинга" class="cover-image">
+                <h3>Что такое Крипто Стейкинг</h3>
+                <p>Узнайте, как зарабатывать на криптовалюте безопасно с помощью стейкинга!</p>
+                <a href="S1.html" class="button">Читать статью</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Переключение темы
+        const themeToggle = document.getElementById('theme-toggle');
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            if (document.body.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+</body>
+</html>
