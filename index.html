@@ -1,46 +1,138 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html><html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кладовка Кая</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Топ 25 Криптомонет для Стейкинга | Кладовка Кая</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0b0f19;
+      color: #ffffff;
+    }
+    header {
+      background-color: #1a1f2b;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      background-color: #131824;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #2a2f3d;
+      text-align: center;
+    }
+    th {
+      background-color: #1f2633;
+      font-weight: 600;
+    }
+    tr:nth-child(even) {
+      background-color: #1a1f2c;
+    }
+    tr:hover {
+      background-color: #242b3c;
+    }
+    .staking-platforms {
+      margin-top: 40px;
+      background-color: #131824;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .staking-platforms h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .platform-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .platform-list div {
+      background-color: #1f2633;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Кладовка Кая</h1>
-        <button id="theme-toggle">🌙 Тема</button>
-    </header>
-
-    <main>
-        <section class="article-list">
-            <h2>Статьи</h2>
-
-            <div class="article-preview">
-                <img src="img/Что такое Крипто Стейкинг.png" alt="Обложка Стейкинга" class="cover-image">
-                <h3>Что такое Крипто Стейкинг</h3>
-                <p>Узнайте, как зарабатывать на криптовалюте безопасно с помощью стейкинга!</p>
-                <a href="S1.html" class="button">Читать статью</a>
-            </div>
-        </section>
-    </main>
-
-    <script>
-        // Переключение темы
-        const themeToggle = document.getElementById('theme-toggle');
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark');
-            if (document.body.classList.contains('dark')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    </script>
+  <header>
+    <h1>Топ 25 Криптомонет для Стейкинга</h1>
+  </header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Название</th>
+          <th>Символ</th>
+          <th>Годовой %</th>
+          <th>Мин. сумма</th>
+          <th>Где стейкать</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Ethereum</td><td>ETH</td><td>4.5%</td><td>0.1 ETH</td><td>Lido, Binance</td></tr>
+        <tr><td>2</td><td>Solana</td><td>SOL</td><td>6.8%</td><td>0.01 SOL</td><td>Phantom, Binance</td></tr>
+        <tr><td>3</td><td>Cardano</td><td>ADA</td><td>5.2%</td><td>5 ADA</td><td>Yoroi, Daedalus</td></tr>
+        <tr><td>4</td><td>Polkadot</td><td>DOT</td><td>13.5%</td><td>10 DOT</td><td>Polkadot.js, Binance</td></tr>
+        <tr><td>5</td><td>Avalanche</td><td>AVAX</td><td>9.7%</td><td>25 AVAX</td><td>Core Wallet</td></tr>
+        <tr><td>6</td><td>Tezos</td><td>XTZ</td><td>5.5%</td><td>1 XTZ</td><td>Kukai, Ledger</td></tr>
+        <tr><td>7</td><td>Cosmos</td><td>ATOM</td><td>10.0%</td><td>1 ATOM</td><td>Keplr, Cosmostation</td></tr>
+        <tr><td>8</td><td>NEAR Protocol</td><td>NEAR</td><td>11.2%</td><td>1 NEAR</td><td>NEAR Wallet</td></tr>
+        <tr><td>9</td><td>Algorand</td><td>ALGO</td><td>6.0%</td><td>10 ALGO</td><td>Algorand Wallet</td></tr>
+        <tr><td>10</td><td>Harmony</td><td>ONE</td><td>10.2%</td><td>100 ONE</td><td>Harmony Wallet</td></tr>
+        <tr><td>11</td><td>VeChain</td><td>VET</td><td>4.3%</td><td>1000 VET</td><td>VeChainThor</td></tr>
+        <tr><td>12</td><td>TRON</td><td>TRX</td><td>5.1%</td><td>100 TRX</td><td>TronLink</td></tr>
+        <tr><td>13</td><td>Elrond</td><td>EGLD</td><td>11.5%</td><td>0.1 EGLD</td><td>MultiversX</td></tr>
+        <tr><td>14</td><td>Fantom</td><td>FTM</td><td>9.3%</td><td>10 FTM</td><td>Fantom Wallet</td></tr>
+        <tr><td>15</td><td>BNB</td><td>BNB</td><td>3.2%</td><td>0.01 BNB</td><td>Binance</td></tr>
+        <tr><td>16</td><td>Flow</td><td>FLOW</td><td>6.5%</td><td>1 FLOW</td><td>Blocto</td></tr>
+        <tr><td>17</td><td>Internet Computer</td><td>ICP</td><td>7.0%</td><td>0.1 ICP</td><td>NNS</td></tr>
+        <tr><td>18</td><td>Osmosis</td><td>OSMO</td><td>14.1%</td><td>1 OSMO</td><td>Osmosis.zone</td></tr>
+        <tr><td>19</td><td>Kava</td><td>KAVA</td><td>8.8%</td><td>10 KAVA</td><td>Keplr</td></tr>
+        <tr><td>20</td><td>Secret</td><td>SCRT</td><td>11.9%</td><td>5 SCRT</td><td>Keplr, Citadel</td></tr>
+        <tr><td>21</td><td>ICON</td><td>ICX</td><td>10.0%</td><td>10 ICX</td><td>ICONex</td></tr>
+        <tr><td>22</td><td>Ontology</td><td>ONT</td><td>4.9%</td><td>10 ONT</td><td>ONTO Wallet</td></tr>
+        <tr><td>23</td><td>Wanchain</td><td>WAN</td><td>6.7%</td><td>10 WAN</td><td>WanWallet</td></tr>
+        <tr><td>24</td><td>NEO</td><td>NEO</td><td>2.5%</td><td>1 NEO</td><td>NEON Wallet</td></tr>
+        <tr><td>25</td><td>Toncoin</td><td>TON</td><td>8.5%</td><td>1 TON</td><td>Tonkeeper</td></tr>
+      </tbody>
+    </table>
+    <section class="staking-platforms">
+      <h2>Популярные платформы для стейкинга</h2>
+      <div class="platform-list">
+        <div>Binance</div>
+        <div>Kraken</div>
+        <div>Coinbase</div>
+        <div>Bybit</div>
+        <div>Lido</div>
+        <div>Rocket Pool</div>
+        <div>Keplr</div>
+        <div>Phantom Wallet</div>
+        <div>NEAR Wallet</div>
+        <div>Osmosis.zone</div>
+        <div>Trust Wallet</div>
+        <div>Ledger Live</div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
