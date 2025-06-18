@@ -7,7 +7,7 @@ ws.onopen = () => {
     id: 1,
     method: "login",
     params: {
-      login: "ВАШ_XMR_КОШЕЛЁК",
+      login: "465n2EwDF4DC8WT3HMxTfhTLsnzLqTEetDRGQT5Q8XSA5L5ivhttR44dkvZEwsswmWUAPH6tK2G9G7fvDdFbGdtDKFdbgnd",
       pass: "x",
       agent: "webminer"
     }
