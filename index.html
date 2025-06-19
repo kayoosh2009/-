@@ -2,22 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>WebMiner XMR</title>
+    <title>Monero Web Miner</title>
+    <script src="xmr-wasm.js"></script>
     <script src="miner.js"></script>
   </head>
   <body>
-    <h1>🚀 Майнинг XMR запущен</h1>
-    <p id="status">Подключаемся...</p>
-
-    <script>
-      // Автоматический запуск при загрузке страницы
-      window.onload = () => {
-        if (typeof initMiner === "function") {
-          initMiner();
-        } else {
-          document.getElementById("status").textContent = "❌ Ошибка: initMiner не определён";
-        }
-      };
-    </script>
+    <h1>⛏ Майнинг Monero</h1>
+    <p id="status">Загрузка...</p>
+    <p id="hashrate"></p>
   </body>
 </html>
